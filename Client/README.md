@@ -1,16 +1,77 @@
-# React + Vite
+# Feature Showcase Project
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+An interactive feature showcase application built with React and Vite, demonstrating a modern and engaging way to present product features. This project was developed as part of the Troibits Infotech internship assignment.
 
-Currently, two official plugins are available:
+## Features
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+- **Interactive Scrolling**: Desktop users can scroll through features with a smooth, locked scrolling mechanism
+- **Mobile-First Design**: Responsive layout with touch-friendly swipe interactions on mobile devices
+- **Animated Transitions**: Smooth animations between features using Framer Motion
+- **Dark Theme**: Modern dark theme design matching Troibits' brand aesthetic
+- **Component-Based Architecture**: Modular and maintainable code structure
 
-## React Compiler
+## Technologies Used
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+- React 18
+- Vite
+- Tailwind CSS
+- Framer Motion
+- Swiper
+- React Intersection Observer
 
-## Expanding the ESLint configuration
+## Project Structure
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+```
+src/
+  components/
+    sections/
+      IntroSection.jsx     # First section
+      MainSection.jsx      # Main feature section
+      OutroSection.jsx     # Last section
+      FeatureCard.jsx      # Individual feature card
+      FeatureContent.jsx   # Feature text and desktop navigation
+      FeatureCarousel.jsx  # Image showcase and mobile carousel
+      featureData.js       # Feature content
+```
+
+## Getting Started
+
+1. Clone the repository
+```bash
+git clone https://github.com/RjyavardhanSingh/Troibits.git
+cd Troibits/Client
+```
+
+2. Install dependencies
+```bash
+npm install
+```
+
+3. Start the development server
+```bash
+npm run dev
+```
+
+## Usage
+
+- **Desktop**: 
+  - Scroll down to progress through features
+  - Click on feature cards to jump to specific features
+  
+- **Mobile**:
+  - Swipe left/right to navigate between features
+  - Touch-optimized interface with smooth transitions
+
+## Contributing
+
+This is an internship assignment project for Troibits Infotech. Pull requests are welcome for improvements and bug fixes.
+
+## Contact
+
+For any queries regarding this project, please contact:
+- Email: contact@troibits.com
+- Website: www.troibits.com
+
+## License
+
+This project is created as part of an internship assignment and should be used accordingly.
